@@ -1,0 +1,44 @@
+p{
+  color: red;
+}
+#p1{
+  color: black;
+}
+.header{
+  background: silver;
+  width: 98.90%;
+  margin: 0 auto;
+}
+.wrapper_full{
+  width: 85%;
+  margin: 0 auto;
+
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+}
+.wrapper{
+  width: 920px;
+  margin: 0 10px;
+}
+.table_content{
+
+  padding: 93px;
+
+}
+.table_aria{
+  width: 920px;
+  margin: 0 10px;
+
+}
+.from_part{
+  width: 500px;
+  text-align: center;
+  float: right;
+}
+.table_part{
+  width: 250px;
+  padding: 60px;
+  text-align: center;;
+#form1{
+  border-style: double;
+  border-color: black;
+}
