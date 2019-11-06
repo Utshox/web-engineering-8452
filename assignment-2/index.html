@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Web Engineering (Assignment-2)</title>
+		<style> 
+            body{
+                margin-left:20%;
+                padding-left:5%;
+                padding-bottom: 5%;
+                border:solid black 2px; 
+				border-color: white;
+                width:50%;
+                padding-top:3%;
+                height: 95%;
+				background-color: #F00;
+				background: -webkit-linear-gradient(-45deg, #23A6D5, #23D5AB, #E73C7E, #EE7752);
+            }
+        </style>
+	</head>
+	<body onload="fortune()">
+		
+		<h2>Part - 1 : Fortune Generator</h2>
+		<p id="fortune"></p>
+	
+		<h2>Part - 2 : Currency Converter</h2>
+		
+		<form>
+			<input type="text" name="amount1" placeholder="Enter Amount..."/>
+			<select id="currency">
+				<option value="tk">TK</option>
+				<option value="dollar">Dollar</option>
+				<option value="euro">Euro</option>
+				<option value="pound">Pound</option>
+			</select>
+			<br>
+			<input type="text" name="amount2" placeholder="Enter Amount..."/>
+			<select id="currency1">
+				<option value="tk">TK</option>
+				<option value="dollar">Dollar</option>
+				<option value="euro">Euro</option>
+				<option value="pound">Pound</option>
+			</select>
+			<br>
+			<input type="button" value="Convert" onclick="convert()" />
+			<br><br>
+			<b><p id="eq"></p></b> 
+			<p id="dollar"></p>
+			<p id="euro"></p>
+			<p id="pound"></p>
+		</form>
+		
+		
+		<h2>Part - 3 : Quiz Question</h2>
+		<form action="/action_page.php">
+			<p>1.Fastest shorthand writer was</p>
+			  <input type="radio" name="1" value="a">A. Dr. G. D. Bist<br>
+			  <input type="radio" name="1" value="b">B. J.M. Tagore<br>
+			  <input type="radio" name="1" value="c">C. Khudada Khan<br>  
+			<p id="ans1" style="color:rad"></p>
+			<p>2.Hitler party which came into power in 1933 is known as</p>
+			  <input type="radio" name="2" value="a"> A. Democratic party<br>
+			  <input type="radio" name="2" value="b"> B. Nazi party<br>
+			  <input type="radio" name="2" value="c"> C. Labour party<br>  
+			  <p id="ans2" style="color:rad"></p>
+			<p>3.During World War II, when did Germany attack France?</p>
+				 <input type="radio" name="3" value="a">A. 1939<br>
+				 <input type="radio" name="3" value="b">B. 1940<br>
+				 <input type="radio" name="3" value="c">C. 1941<br>  
+				<p id="ans3" style="color:rad"></p>
+			<p>4.Filaria is caused by</p>
+				<input type="radio" name="4" value="a"> A. Bacteria<br>
+				<input type="radio" name="4" value="b"> B. Mosquito<br>
+				<input type="radio" name="4" value="c"> C. Virus<br>  
+				<p id="ans4" style="color:rad"></p>
+			<p>5.Galileo was an Italian astronomer who</p>
+				 <input type="radio" name="5" value="a">A. developed the telescope<br>
+				 <input type="radio" name="5" value="b">B. discoveredfour satellites of Jupiter and the movement of pendulum produces a regular time measurement<br>
+				 <input type="radio" name="5" value="c">C. All of the above<br>  
+				<p id="ans5" style="color:rad"></p>
+			<h3 style="color:green" id="result"></h3>
+			  <input type="button" value="Submit" onclick="quizQuestion()" />
+		</form>
+		
+		
+		<script src="lab2.js" ></script>
+	</body>
+</html>
